@@ -29,8 +29,8 @@ public enum ExtendedOperation implements Operation {
 
 	// Test class to exercise all operations in "extension enum" - Page 167
 	public static void main(String[] args) {
-		double x = Double.parseDouble(args[0]);
-		double y = Double.parseDouble(args[1]);
+		double x = Double.parseDouble("5");
+		double y = Double.parseDouble("2");
 		test(ExtendedOperation.class, x, y);
 
 		System.out.println(); // Print a blank line between tests

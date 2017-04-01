@@ -30,14 +30,25 @@ public class NestedIteration {
 		Collection<Suit> suits = Arrays.asList(Suit.values());
 		Collection<Rank> ranks = Arrays.asList(Rank.values());
 
-		List<Card> deck = new ArrayList<Card>();
+	/*	List<Card> deck = new ArrayList<Card>();
 		for (Iterator<Suit> i = suits.iterator(); i.hasNext();)
 			for (Iterator<Rank> j = ranks.iterator(); j.hasNext();)
-				deck.add(new Card(i.next(), j.next()));
+				deck.add(new Card(i.next(), j.next()));*/
 
 		// Preferred idiom for nested iteration on collections and arrays
 		// for (Suit suit : suits)
 		// for (Rank rank : ranks)
 		// deck.add(new Card(suit, rank));
+
+		List<Integer> ints = new ArrayList<>();
+		ints.add(1);
+		ints.add(2);
+		ints.add(3);
+		for(Iterator<Integer> i = ints.iterator(); i.hasNext();) {
+			i.next();
+			i.remove();
+		}
+
+		System.out.println(ints);
 	}
 }

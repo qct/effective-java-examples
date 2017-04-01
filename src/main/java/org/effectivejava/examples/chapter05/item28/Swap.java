@@ -1,6 +1,7 @@
 // Private helper method for wildcard capture - Pages 139-140
 package org.effectivejava.examples.chapter05.item28;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -16,7 +17,7 @@ public class Swap {
 
 	public static void main(String[] args) {
 		// Swap the first and last argument and print the resulting list
-		List<String> argList = Arrays.asList(args);
+		List<String> argList = Arrays.asList("1", "2");
 		swap(argList, 0, argList.size() - 1);
 		System.out.println(argList);
 	}

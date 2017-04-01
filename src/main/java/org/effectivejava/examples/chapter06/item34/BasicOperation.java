@@ -33,3 +33,4 @@ public enum BasicOperation implements Operation {
 		return symbol;
 	}
 }
+
